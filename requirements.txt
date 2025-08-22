@@ -1,0 +1,3 @@
+# write the requirements.py please
+flask
+cs50
