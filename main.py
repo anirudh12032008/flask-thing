@@ -37,7 +37,7 @@ def submit():
 
 @app.route('/all')
 def allview():
-    user_name = "ANIII_all"
+    user_name = "idk who you are"
     data = db.execute("SELECT * FROM entries")
     return render_template('all.html', user_name=user_name, data=data)
 

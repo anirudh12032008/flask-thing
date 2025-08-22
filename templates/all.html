@@ -8,5 +8,13 @@
 </head>
 <body>
     <h1>all responses</h1>
+
+    <ul>
+        {% for row in data %}
+        <li> Name --> {{ row.inp1 }} :: Something ---> {{row.inp2}} :: Something More ----> {{row.textbox}}</li>
+        {% endfor %}
+    </ul>
+    <h2>SUBMIT something</h2>
+    <a href="/">click here to submit</a>
 </body>
 </html>
