@@ -14,7 +14,8 @@ db.execute("""
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         inp1 TEXT NOT NULL,
         inp2 TEXT NOT NULL,
-        textbox TEXT
+        textbox TEXT,
+        timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
     )
 """)
 
@@ -39,6 +40,8 @@ def submit():
 def allview():
     user_name = "idk who you are"
     data = db.execute("SELECT * FROM entries")
+    print(data)
+
     return render_template('all.html', user_name=user_name, data=data)
 
 if __name__ == '__main__':

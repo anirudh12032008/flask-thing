@@ -7,15 +7,15 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-blue-200 p-10 text-center">
-    <h1 class="text-4xl text-center font-bold">Flask thingyy</h1>
-    <h3>This is {{ user_name }}</h3>
-    <p>This is a cool flask app</p>
+    <h1 class="text-4xl text-center font-bold">Lock in your virtual diary</h1>
+    <h3>This is {{ user_name }} your favourite person (diary)
+    </h3>
     <form action="/submit" method="post">
         <div class="flex flex-col gap-4 max-w-[50vw] mx-auto mt-6">
-            <input type="text" name="inp1" class=" p-2 rounded" placeholder="Type your name...">
-            <input type="text" name="inp2" class="p-2 rounded" placeholder="Type something you want to save...">
-            <textarea name="textbox" id="text1" placeholder="Enter MORE!!!"></textarea>
-            <button id="submit1" class="bg-red-500 text-white p-2 rounded" type="submit">Submit</button>
+            <input type="text" name="inp1" class=" p-2 rounded" placeholder="Type the heading...">
+            <input type="text" name="inp2" class="p-2 rounded" placeholder="Type some subheading...">
+            <textarea name="textbox" id="text1" placeholder="Enter Whatever is in your MIND!!!"></textarea>
+            <button id="submit1" class="bg-red-500 text-white p-2 rounded" type="submit">Submit this entry</button>
         </div>
     </form>
     <a href="/all">
@@ -27,6 +27,6 @@
 <button class="bg-blue-500 text-white p-2 rounded" type="button" onclick="document.getElementById('surprise1').style.display='block'">Click me for a surprise!</button>
     <div id="surprise1" class="hidden bg-cyan-700 ">
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?si=sga0QM66uR02u4g-&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+<iframe width="780" height="415" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=sga0QM66uR02u4g-&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
 </body>
 </html>

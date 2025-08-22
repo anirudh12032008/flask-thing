@@ -6,15 +6,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>All responses</title>
 </head>
-<body>
-    <h1>all responses</h1>
+<body class="bg-blue-200 p-10 text-center">
+    <h1 class="text-4xl font-bold">Here are your lovely diary entries</h1>
 
-    <ul>
+    <ul class="max-w-[50vw] mx-auto text-left mt-6">
         {% for row in data %}
-        <li> Name --> {{ row.inp1 }} :: Something ---> {{row.inp2}} :: Something More ----> {{row.textbox}}</li>
-        {% endfor %}
+<li class="p-3 border-b border-gray-200">
+        <span class="font-semibold text-blue-700">Title --></span> {{ row.inp1 }} <br>
+        <span class="font-semibold text-green-700">Subheading ---></span> {{ row.inp2 }} <br>
+        <span class="font-semibold text-pink-700">What was on your mind ----></span> {{ row.textbox }}
+        <br> <span class="text-sm text-gray-500">Submitted on -----> {{ row.timestamp }}</span>
+      </li>        
+      {% endfor %}
     </ul>
-    <h2>SUBMIT something</h2>
-    <a href="/">click here to submit</a>
+    <h2 class="text-2xl font-bold mt-8">SUBMIT something</h2>
+    <a href="/">
+        <button class="bg-blue-500 text-white p-2 rounded">click here to submit</button>
+    </a>
 </body>
 </html>
