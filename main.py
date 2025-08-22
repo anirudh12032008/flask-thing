@@ -3,6 +3,7 @@ import os
 from cs50 import SQL
 
 
+
 if not os.path.exists("database.db"):
     open("database.db", "w").close()
 
@@ -43,4 +44,5 @@ def allview():
     return render_template('all.html', user_name=user_name, data=data)
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
